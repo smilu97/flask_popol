@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{%block body %}
+	<div class=post-wrap>
+		{%for post in posts %}
+			<div class="post">
+				<div class="post_title">
+					<a href="/{{post_type}}/{{post.id}}">{{ post.title }}</a>
+				</div>
+			</div>
+		{%else%}
+			<div class="post_nomessage">
+				There is no posts!!
+			</div>
+		{%endfor%}
+	</div>
+	<a href="/{{post_type}}/new">new post</a>
+{%endblock%}

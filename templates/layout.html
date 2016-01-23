@@ -1,0 +1,50 @@
+<!doctype html>
+<header>
+	<title>YeongJin SOCC Portfolio page</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</header>
+<body>
+	<aside>
+		<ul>
+			<li><a href="{{ url_for('main_page') }}">About Me</a></li>
+			<br>
+			<li>
+				Contents
+				<ul>
+					<li>
+						&nbsp;&nbsp;&nbsp;&nbsp;Music
+						<ul>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/piano">Piano</a></li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/musicetc">etc...</a></li>
+						</ul>
+					</li>
+					<li>
+						&nbsp;&nbsp;&nbsp;&nbsp;C.S.
+						<ul>
+							<li>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web
+								<ul>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/html">HTML</a></li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/css">CSS</a></li>
+								</ul>
+							</li>
+							<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/reversing">Reversing</a> </li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<br><br>
+				Composing
+				<ul>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;Bases</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;Main Melodies</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;Sub Melodies</li>
+					<br>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;Mixer</li>
+				</ul>
+			</li>
+		</ul>
+	</aside>
+	{%block body%} {%endblock%}
+</body>

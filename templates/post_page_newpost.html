@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{%block body%}
+	<form action="/new_post" method=post class=add-post>
+		<input type=hidden name=type value="{{post_type}}">
+		<dl>
+			<dt>Title :
+			<dd><input  type=text size=30 name=title>
+			<dt>Content :
+			<dd><textarea name=content rows=4 cols=40></textarea>
+			<dd><input type=submit value=Post>
+		</dl>
+	</form>
+{%endblock%}

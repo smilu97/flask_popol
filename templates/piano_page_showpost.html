@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{%block body%}
+	<div class=show-post>
+		<h1>{{post.title}}</h1>
+		<br>
+		<h2>{{post.content}}</h2>
+		<br>
+		<a href="{{url_for('piano_page')}}">back</a>
+		<a href="/piano/{{post.id}}/delete">delete</a>
+	</div>
+{%endblock%}
